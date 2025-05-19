@@ -4,13 +4,13 @@ import tqdm
 from utils import extract_output, bprint, get_attendance_id
 
 session = boto3.Session(
-    region_name='eu-central-1',
+    region_name='eu-west-1',
     aws_access_key_id=get_attendance_id(),
     aws_secret_access_key='<unused>',
 )
 
 client = session.client(
-    service_name='bedrock-runtime', region_name='eu-central-1',
+    service_name='bedrock-runtime', region_name='eu-west-1',
     endpoint_url='https://bedrock-runtime.aws-proxy.skillerwhale.com/'
 )
 
@@ -25,10 +25,10 @@ company_policy = """
 - Acceptable Use: Prohibit abusive, illegal, or insecure content; resources may be suspended after warning if policy violations occur.
 """
 
-# Example questions and answers based on the company policy
+# Test questions and answers based on the company policy
 # The questions are designed to test the LLM's understanding of the policy document.
 # The answers are the expected responses based on the policy document.
-example_questions = [
+test_questions = [
     {'question': 'What security measures does the platform enforce?',
      'answer': 'We enforce multi-layered protection including encryption at rest and in transit, regular vulnerability assessments, and strict access controls.'},
     {'question': 'What uptime guarantee does the platform provide?',
@@ -52,13 +52,13 @@ example_questions = [
 ]
 
 # TODO: Comment out to judge all questions.
-example_questions = example_questions[:3]
+test_questions = test_questions[:3]
 
 # A judge system prompt for the LLM
 # The judge system prompt is used to evaluate the responses of the LLM to the questions above.
 JUDGE_SYSPROMPT = """\
 OUTPUT ONLY A NUMBER ON A SCALE OF 1 TO 10.
-You are comparing a submitted answer to an expert answer on a given question.
+You are comparing a submitted answer (`<submission>`) to an expert answer (`<expert>`) on a given question (`<question>`).
 
 Compare the factual content of the submitted answer with the expert answer.
 Ignore any differences in style, grammar, or punctuation.
@@ -72,15 +72,19 @@ Be extremely harsh about any factual errors or made-up data.
 # The input data includes the question, the expected answer, and the submitted answer.
 JUDGE_MSG_PROMPT = """
 Here is the data:
-[BEGIN DATA]
-************
-[Question]: {input}
-************
-[Expert]: {expected}
-************
-[Submission]: {output}
-************
-[END DATA]
+<data>
+    <question>
+        {input}
+    </question>
+
+    <expert>
+        {expected}
+    </expert>
+
+    <submission>
+        {output}
+    </submission>
+</data>
 """
 
 # A system prompt for the LLM that answers questions without any context.
@@ -97,7 +101,7 @@ Do not admit that you cannot or do not know the answer.
 # Generate answers to the example questions using the LLM without any context.
 bprint('Generating answers without context...')
 resp = []
-for data in tqdm.tqdm(example_questions):
+for data in tqdm.tqdm(test_questions):
     resp.append(
         client.converse(
             modelId='eu.amazon.nova-micro-v1:0',
@@ -124,8 +128,9 @@ for i, r in enumerate(resp_text):
             "role": "user",
             "content": [{
                 "text": JUDGE_MSG_PROMPT.format(
-                    input=example_questions[i]['question'],
-                    expected=example_questions[i]['answer'],
+                    policy=company_policy,
+                    input=test_questions[i]['question'],
+                    expected=test_questions[i]['answer'],
                     output=r
                 )
             }]
@@ -139,12 +144,12 @@ for i, r in enumerate(resp_text):
         pass
 
     judge_resp_text = extract_output(judge_resp)
-    bprint(f'Question: {example_questions[i]["question"]}')
+    bprint(f'Question: {test_questions[i]["question"]}')
     bprint('Answer: ', end='')
     print(r)
 
     bprint('Expert answer: ', end='')
-    print(example_questions[i]["answer"])
+    print(test_questions[i]["answer"])
 
     bprint('Judge response: ', end='')
     print(judge_resp_text)

@@ -3,13 +3,13 @@ import tqdm
 from utils import accuracy_score, extract_output, get_attendance_id
 
 session = boto3.Session(
-    region_name='eu-central-1',
+    region_name='eu-west-1',
     aws_access_key_id=get_attendance_id(),
     aws_secret_access_key='<unused>',
 )
 
 client = session.client(
-    service_name='bedrock-runtime', region_name='eu-central-1',
+    service_name='bedrock-runtime', region_name='eu-west-1',
     endpoint_url='https://bedrock-runtime.aws-proxy.skillerwhale.com/'
 )
 
