@@ -22,7 +22,7 @@ services:
     tty: true
     stdin_open: true
   chat_client:
-    image: "ghcr.io/skiller-whale/bedrock-chat-client:v0.1.4"
+    image: "ghcr.io/skiller-whale/bedrock-chat-client:v0.1.5"
     volumes:
       - ./exercises/logging:/app/logging
     ports:
