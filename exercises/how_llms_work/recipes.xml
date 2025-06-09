@@ -1,0 +1,34 @@
+<recipeBook>
+  <recipes>
+    <recipe id="1">
+      <name>Spaghetti Carbonara</name>
+      <ingredients>
+        <ingredient>Pasta</ingredient>
+        <ingredient>Eggs</ingredient>
+        <ingredient>Pancetta</ingredient>
+        <ingredient>Pecorino Romano</ingredient>
+      </ingredients>
+      <prepTime>20 minutes</prepTime>
+    </recipe>
+    <recipe id="2">
+      <name>Tomato Basil Soup</name>
+      <ingredients>
+        <ingredient>Tomatoes</ingredient>
+        <ingredient>Garlic</ingredient>
+        <ingredient>Basil</ingredient>
+        <ingredient>Vegetable Broth</ingredient>
+      </ingredients>
+      <prepTime>30 minutes</prepTime>
+    </recipe>
+    <recipe id="3">
+      <name>Chicken Stir-Fry</name>
+      <ingredients>
+        <ingredient>Chicken Breast</ingredient>
+        <ingredient>Soy Sauce</ingredient>
+        <ingredient>Mixed Vegetables</ingredient>
+        <ingredient>Sesame Oil</ingredient>
+      </ingredients>
+      <prepTime>25 minutes</prepTime>
+    </recipe>
+  </recipes>
+</recipeBook>
