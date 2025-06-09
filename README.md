@@ -4,56 +4,8 @@ This repo includes exercises to accompany Skiller Whale sessions on Genearative 
 
 During each session you'll be asked to write and edit code in some of the files.
 
-## Using `sync.py` With a Local Python Installation
+## Running Exercises
 
-1. Make sure your Python version is `>= 3.13`. You can check the version you have installed by running:
-    ```sh
-    python3 --version
-    ```
+Whilst you can download these exercises locally for reference, they are intended to be run using the hosted environment provided by Skiller Whale during sessions.
 
-2. Clone this repository onto your computer. You can do this in a terminal by using:
-    ```sh
-    git clone https://github.com/skiller-whale/genai.git
-    ```
-
-3. Open the repository directory in a code editor, and replace the contents of the `attendance_id` file, so that it contains only your unique attendance ID for the session (and nothing else).
-
-4. In a terminal, navigate to the `genai` directory you cloned.
-
-5. Make sure you have all the `requirements.txt` packages installed in a Python 3 environment. You can do that by running these two commands:
-    ```sh
-    python3 -m ensurepip
-    python3 -m pip install -r requirements.txt
-    ```
-
-5. Run `python3 sync.py` and enter your attendance ID when prompted. You shouldn't see any errors.
-
-6. At the end of the session termimnate the sync script with `Ctrl + C`.
-
-## Using `docker`
-
-1. Clone this repository onto your computer. You can do this in a terminal by using:
-    ```sh
-    git clone https://github.com/skiller-whale/genai.git
-    ```
-
-2. Open the repository directory in a code editor, and replace the contents of the `attendance_id` file, so that it contains only your unique attendance ID for the session (and nothing else).
-
-3. In a terminal, navigate to the `genai` directory you cloned.
-
-4. Run the following two commands to start the sync script:
-    ```sh
-    docker compose up --build -d
-    docker compose run exercises
-    ```
-
-    The very first time you run this it might take a while to download and build some docker images, but the future times you run it should be quicker.
-
-    Python is installed inside the Docker container you downloaded, so you won't need to separately install it, and running the exercises won't affect any other local Python installations.
-
-    The `docker compose up` process will continue running in the background, and watch for any file changes in the repo.
-
-5. At the end of the session, exit the `exercises` container (e.g. by running `exit`), then run the following to shutdown the sync container:
-    ```sh
-    docker compose down
-    ```
+This makes managing API credentials much easier, and means you don't need to install or set up anything locally.
