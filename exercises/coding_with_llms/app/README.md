@@ -5,7 +5,7 @@ This project is a web application built using Flask for the backend and HTMLX fo
 ## Project Structure
 
 ```
-flask-htmlx-app
+forum
 ├── src
 │   ├── app.py                # Entry point of the application
 │   ├── templates             # Contains HTML templates

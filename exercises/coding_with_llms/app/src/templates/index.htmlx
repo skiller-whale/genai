@@ -16,6 +16,6 @@
             Loading...
         </div>
     </div>
-    <script src="https://cdn.jsdelivr.net/npm/htmx.org@2.0.5/dist/htmx.min.js"></script>
+    <script src="{{ url_for('static', filename='htmx.2.0.5.min.js') }}"></script>
 </body>
 </html>
