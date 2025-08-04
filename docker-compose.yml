@@ -14,7 +14,7 @@ services:
       SW_RUNNING_IN_HOSTED_ENV:
       WATCHER_BASE_PATH: "/app"
       ATTENDANCE_ID_FILE: "/app/sync/attendance_id"
-      WATCHED_EXTS: ".py .yaml"
+      WATCHED_EXTS: ".py .yaml .json .css"
       IGNORE_MATCH: ".git"
     volumes:
       - ./exercises:/app/exercises
