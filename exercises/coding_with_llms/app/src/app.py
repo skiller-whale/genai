@@ -9,7 +9,7 @@ def load_posts():
 
 @app.route('/')
 def index():
-    return render_template('index.htmlx')
+    return render_template('index.html')
 
 @app.route('/api/posts', methods=['GET'])
 def get_posts():
@@ -20,7 +20,7 @@ def get_posts():
     end = start + 3
 
     return render_template(
-        'load_next.htmlx',
+        'load_next.html',
         posts=posts[start:end],
         page=page + 1
     )
