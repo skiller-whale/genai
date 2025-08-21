@@ -1,6 +1,6 @@
-# Flask HTMLX App
+# Flask HTMX App
 
-This project is a web application built using Flask for the backend and HTMLX for the frontend. It allows users to view and add posts with infinite scrolling functionality.
+This project is a web application built using Flask for the backend and HTMX for the frontend. It allows users to view and add posts with infinite scrolling functionality.
 
 ## Project Structure
 
@@ -9,8 +9,8 @@ forum
 ├── src
 │   ├── app.py                # Entry point of the application
 │   ├── templates             # Contains HTML templates
-│   │   ├── index.htmlx       # Displays posts with infinite scroll
-│   │   └── form.htmlx        # Form for adding new posts
+│   │   ├── index.html       # Displays posts with infinite scroll
+│   │   └── form.html        # Form for adding new posts
 │   ├── static                # Contains static files
 │   │   ├── styles.css        # CSS styles for the frontend
 │   │   └── scripts.js        # JavaScript for handling infinite scroll and form submission
