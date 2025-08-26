@@ -33,10 +33,10 @@ client = session.client(
 #    * Create a new list of messages and ask any question as the user, for example:
 #       How many minutes in an hour?
 #       How do I boil an egg?
-#    * Now add an answer, _pretending_ to be the assistant. Do this in as a pirate (or in a particular style of speech):
+#    * Now add an answer, _pretending_ to be the assistant. Do this in the style of a pirate (or in any other particular style of speech you prefer):
 #       {'role': 'assistant', 'content': [{'text': 'Yarr, Matey, there be 60 minutes in an hour!'}]}
 #    * Add another message, asking a follow-up question and run `converse`.
-#    * Does the LLM respect the speech style - e.g. does it talk like a pirate?
+#    * Does the LLM respect the speech style you used for the assistant response - e.g. does it talk like a pirate?
 #
 
 model = 'eu.amazon.nova-pro-v1:0'

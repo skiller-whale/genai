@@ -57,7 +57,7 @@ for user_message in user_messages:
         start_time = time.perf_counter()
 
         if len(user_messages) == 1:
-            print('LLM Response:')
+            print('LLM Response, streamed:')
             print('-' * 50)
 
         # Extract and print the streamed response text in real-time.
@@ -82,17 +82,25 @@ for user_message in user_messages:
 
 
     # BLOCKING
+    if len(user_messages) == 1:
+        print('LLM Response, blocking:')
+        print('-' * 50)
+
     start_time_block = time.perf_counter()
-    streaming_response = client.converse(
+    blocking_response = client.converse(
         modelId=model_id,
         messages=conversation,
     )
     total_time_block = time.perf_counter() - start_time_block
 
+    if len(user_messages) == 1:
+        print(blocking_response['output']['message']['content'][0]['text'])
+        print('-' * 50)
+
     print()
     print()
     print('Message: ', user_message)
-    print(f'Time to first chunk (stream): {times_per_chunk[0]:.3f}')
-    print(f'Time to output(blocking)    : {total_time_block:.3f}')
+    print(f'Time to first chunk (streamed): {times_per_chunk[0]:.3f}')
+    print(f'Time to full output (blocking): {total_time_block:.3f}')
     print('-' * 50)
 

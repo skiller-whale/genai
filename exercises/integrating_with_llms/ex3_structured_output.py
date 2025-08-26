@@ -21,18 +21,18 @@ client = session.client(
 #   You will convert it to JSON using an LLM.
 #
 # PART 1 - schema
-#   Make the JSON Schema accept:
+#   The JSON Schema for each item in the array should have these properties:
 #       * `name`, type string
 #       * `max_age`, type: integer
 #   * Make sure you list those properties in `required` too.
 #
 #   * Edit the system message to tell the LLM to perform the relevant task.
-#   * Run `converse` and make sure the LLM extracts the appropriate JSON.
+#   * Run this code and make sure the LLM extracts the appropriate JSON.
 #
 # PART 2 - diet
 #
 #   * Now add a field for `diet` - an array of strings.
-#   * Run `converse` and make sure the LLM extracts the appropriate JSON.
+#   * Run the code again and make sure the LLM extracts the appropriate JSON.
 #
 #   * When finished, uncomment the last lines that extract the JSON output directly.
 #       * Make sure it runs with no errors and you see the JSON output.
