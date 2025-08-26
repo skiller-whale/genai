@@ -21,15 +21,16 @@ client = session.client(
 #
 #  The tool is already defined and implemented in the `get_project_info` function and `tool_config`.
 #
-#  * Run the code to see the LLMs response.
+#  * Run the code as it is, to see the LLM's response.
+#
 #  * Write code that calls the tool and adds the result into an LLM message.
 #  * Append that message to the conversation.
-#  * Add another call to `converse` and make sure the LLM generates an email with appropriate content.
+#  * Add another call to `converse` to check whether the LLM generates an email with appropriate content.
 #
 
 def get_project_info(project_code):
     """
-    Extract project info by project name.
+    Extract project info by project code.
     """
     if project_code not in project_info:
         return [{"json": {'error': 'Project not found'}}]

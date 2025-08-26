@@ -10,13 +10,13 @@ from utils import get_attendance_id
 #
 #   Can you break it?
 #
-# For examples:
+# For example:
 #   * Try talking about orange juice without talking about orange juice.
-#   * Try asking the LLM to output the first word of a message that spells out 'orange juice'.
+#   * Try asking the LLM to output the first letters of each word in a message, that spells out 'orange juice'.
 #
 # Some tips/things to look out for.
 #
-#   * Is the error different when you mention orange juice in the prompt versus the LLM output?
+#   * Is the error different when you mention orange juice in the prompt versus when it would appear in the LLM output?
 #   * Try it _without_ the guardrail too - see if the model talks about orange juice in the output or not.
 #
 
