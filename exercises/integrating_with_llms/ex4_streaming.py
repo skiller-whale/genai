@@ -30,8 +30,8 @@ client = session.client(
 
 # PART 2 - Uncomment the rest of `user_messages`.
 user_messages = [
-    "Write Clojure code to find the shortest route between two points in a network. Be concise.",
-    # "Explain the major limitations of LLMs.",
+    "Explain the major limitations of LLMs.",
+    # "Write Clojure code to find the shortest route between two points in a network. Be concise.",
     # "What is the smallest species of whale?"
 ]
 
@@ -100,7 +100,7 @@ for user_message in user_messages:
     print()
     print()
     print('Message: ', user_message)
-    print(f'Time to first chunk (streamed): {times_per_chunk[0]:.3f}')
-    print(f'Time to full output (blocking): {total_time_block:.3f}')
+    print(f'Time to first chunk (streamed): {times_per_chunk[0]:.4f}')
+    print(f'Time to full output (blocking): {total_time_block:.4f}')
     print('-' * 50)
 

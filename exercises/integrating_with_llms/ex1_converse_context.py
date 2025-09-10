@@ -27,6 +27,7 @@ client = session.client(
 #       llm: <answer>
 #       user: What about England?
 #
+#    * [Optional] What happens if you pass only the last message ('What about England?').
 #
 # Part 2. Pretending you're the LLM
 #

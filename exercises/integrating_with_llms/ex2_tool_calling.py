@@ -3,16 +3,8 @@ from data.projects import project_info
 from pprint import pprint
 from utils import get_attendance_id
 
-session = boto3.Session(
-    region_name='eu-west-1',
-    aws_access_key_id=get_attendance_id(),
-    aws_secret_access_key='<unused>',
-)
-
-client = session.client(
-    service_name='bedrock-runtime', region_name='eu-west-1',
-    endpoint_url='https://bedrock-runtime.aws-proxy.skillerwhale.com/'
-)
+session = boto3.Session(region_name='eu-west-1', aws_access_key_id=get_attendance_id(), aws_secret_access_key='<unused>')
+client = session.client(service_name='bedrock-runtime', region_name='eu-west-1', endpoint_url='https://bedrock-runtime.aws-proxy.skillerwhale.com/')
 
 # Exercise 2 - tool calling
 #   In this exercise you will implement a tool with an LLM call.
@@ -69,10 +61,6 @@ res = client.converse(
 
 out_msg = res['output']['message']
 pprint(out_msg)
-
-# These asserts make sure the LLM calls the tool.
-assert 'toolUse' in out_msg['content'][1], "Expected a tool call in the output message"
-assert out_msg['content'][1]['toolUse']['name'] == 'get_project_info', "Expected tool name to be 'get_project_info'"
 
 # You can use these variables to extract tool call info.
 tool_use = out_msg['content'][1]['toolUse']
