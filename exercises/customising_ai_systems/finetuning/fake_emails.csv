@@ -1,0 +1,266 @@
+,prompt,response
+0,<email>Approved. Proceed to contract signature by EOD.</email>,<author>Alice</author>
+1,<email>Please circulate the quarterly memo by 14:00.</email>,<author>Alice</author>
+2,<email>Good work on the pilot. Roll out to Tier 1 clients next week.</email>,<author>Alice</author>
+3,<email>Decline the sponsorship. Not aligned with strategy.</email>,<author>Alice</author>
+4,"<email>Confirm budget reallocation: +£250k to Platform, effective today.</email>",<author>Alice</author>
+5,<email>Set the board prep call for 09:30 tomorrow.</email>,<author>Alice</author>
+6,<email>Hold hiring on Ops until Q4 forecast is finalized.</email>,<author>Alice</author>
+7,<email>Please send me the redline summary only.</email>,<author>Alice</author>
+8,<email>Greenlight the A/B test. Run for two weeks.</email>,<author>Alice</author>
+9,<email>Move the launch to Wednesday. Marketing to adjust comms.</email>,<author>Alice</author>
+10,<email>Close the loop with the Auditor today. I want a written confirmation.</email>,<author>Alice</author>
+11,<email>CX scores are slipping. I want a turnaround plan by Monday.</email>,<author>Alice</author>
+12,"<email>Approve the vendor, contingent on a 30-day termination clause.</email>",<author>Alice</author>
+13,<email>Cut scope by 10% to hit the date. No change to quality.</email>,<author>Alice</author>
+14,<email>Schedule quarterly skip-levels next week. 20 minutes each.</email>,<author>Alice</author>
+15,<email>Deck is too long. Reduce to 8 slides with decisions highlighted.</email>,<author>Alice</author>
+16,<email>Please acknowledge receipt of the new OKRs.</email>,<author>Alice</author>
+17,<email>We will not discount further. Hold the line.</email>,<author>Alice</author>
+18,<email>Escalation noted. Resolve with Legal before noon.</email>,<author>Alice</author>
+19,<email>Approve travel for the Tokyo visit. Keep it to two days.</email>,<author>Alice</author>
+20,<email>Ship the hotfix by 18:00. Include rollback plan.</email>,<author>Alice</author>
+21,<email>Invite Finance to the roadmap review.</email>,<author>Alice</author>
+22,<email>Thanks for the update. Continue as planned.</email>,<author>Alice</author>
+23,"<email>I want weekly metrics in my inbox by 08:30, every Monday.</email>",<author>Alice</author>
+24,<email>Please draft a two-paragraph customer note. Keep it factual.</email>,<author>Alice</author>
+25,<email>Defer the rebrand decision to Q1.</email>,<author>Alice</author>
+26,<email>We will exit the RFP. Probability too low.</email>,<author>Alice</author>
+27,<email>Confirm GDPR posture with DPO. Send summary to me.</email>,<author>Alice</author>
+28,<email>Great result this quarter. Recognize the team publicly.</email>,<author>Alice</author>
+29,<email>Add churn analysis to the board pack.</email>,<author>Alice</author>
+30,<email>Pause non-critical spend until after audit close.</email>,<author>Alice</author>
+31,"<email>Customer escalation: call them today, then report back.</email>",<author>Alice</author>
+32,<email>Approve the equity refresh. Keep within the pool.</email>,<author>Alice</author>
+33,<email>Set a standing 1:1 with the new GM.</email>,<author>Alice</author>
+34,<email>Switch the KPI to net revenue retention. Effective immediately.</email>,<author>Alice</author>
+35,"<email>I want a postmortem within 48 hours. Blameless, concise.</email>",<author>Alice</author>
+36,<email>Renew the lease for one year. No expansion.</email>,<author>Alice</author>
+37,<email>Please brief PR. No comment until we publish.</email>,<author>Alice</author>
+38,"<email>Security review first, then merge. No exceptions.</email>",<author>Alice</author>
+39,<email>Invite our top three customers to the beta.</email>,<author>Alice</author>
+40,<email>Thanks. Let’s standardize this process company-wide.</email>,<author>Alice</author>
+41,<email>We need a simpler price card. Three tiers max.</email>,<author>Alice</author>
+42,<email>Close the hiring loop by Friday. Candidates should not wait.</email>,<author>Alice</author>
+43,<email>Move my 11:00 to 11:15. Keep the rest intact.</email>,<author>Alice</author>
+44,<email>Sign the MSA after Legal’s final pass. No side letters.</email>,<author>Alice</author>
+45,<email>Cut the pilot timeline to four weeks. Keep the exit criteria.</email>,<author>Alice</author>
+46,<email>Confirm SOC 2 controls are unchanged post-migration.</email>,<author>Alice</author>
+47,<email>Hold the announcement until the integration is stable.</email>,<author>Alice</author>
+48,<email>I want a single owner for this. Name them today.</email>,<author>Alice</author>
+49,<email>Thank you. Please share the learnings at All Hands.</email>,<author>Alice</author>
+50,"<email>Following our discussion with the operations group this morning, I would like to consolidate the disparate streams of feedback into a single, coherent plan that addresses procurement timing, vendor onboarding risks, and the phased rollout to the regional teams, which should reduce confusion and help us measure impact more reliably.</email>",<author>Bob</author>
+51,"<email>Please circulate the revised headcount proposal, which now separates backfills from growth roles and clarifies the quarter-by-quarter ramp assumptions, so Finance can validate the run-rate implications before we present to the executive committee.</email>",<author>Bob</author>
+52,"<email>I reviewed the latest customer health dashboard and, while the retention indicators are trending in the right direction, I am concerned that the expansion opportunities are not being captured quickly enough, particularly in the mid-market segment where our coverage appears thin.</email>",<author>Bob</author>
+53,"<email>Let us align on a concrete decision regarding the pricing experiment because the current hybrid approach increases operational complexity for Sales and creates avoidable friction during renewals, which we should eliminate as soon as practical.</email>",<author>Bob</author>
+54,"<email>For the Q4 initiative, I recommend that we narrow scope to the two features that materially influence adoption, as attempting to deliver the full slate will likely dilute quality and delay time to value for our earliest customers.</email>",<author>Bob</author>
+55,"<email>Could you prepare a short narrative, ideally one page, that stitches together the qualitative insights from the interviews with the quantitative metrics from product analytics, so the board can see a cohesive story rather than a collection of disconnected charts.</email>",<author>Bob</author>
+56,"<email>I want a simple mechanism for triaging escalations that avoids ping-pong between teams, assigns a clear owner within the first hour, and posts an automatic summary to the incident channel so stakeholders are not chasing status updates.</email>",<author>Bob</author>
+57,"<email>The pilot timeline feels optimistic given the current integration gaps, and unless we stub out those dependencies by Friday, we risk slipping into a situation where we are managing exceptions rather than executing the plan.</email>",<author>Bob</author>
+58,"<email>Please ask Legal to confirm the data processing addendum aligns with our standard obligations under GDPR and CCPA, because I would prefer not to negotiate bespoke clauses that create long-term maintenance burdens for the team.</email>",<author>Bob</author>
+59,"<email>If the vendor insists on a multi-year commitment without meaningful pricing concessions or service-level guarantees, we should be prepared to walk away and reassess alternatives that give us flexibility during the next budget cycle.</email>",<author>Bob</author>
+60,"<email>I appreciate the diligence on the integration checklist, and I think we could further reduce risk by adding a brief cutover rehearsal, which should uncover any lingering edge cases before we touch production.</email>",<author>Bob</author>
+61,"<email>Let us consolidate all marketing assets into a single source of truth, ensure version control is enforced, and define a basic intake process so we avoid shipping outdated materials to prospects and partners.</email>",<author>Bob</author>
+62,"<email>The weekly metrics should explicitly call out variance versus plan, highlight the top three drivers behind any deviation, and propose an owner with a time-bound action to close the gap promptly.</email>",<author>Bob</author>
+63,"<email>Before we commit to the roadmap revision, I would like Product to validate the dependencies with Platform and Security, because the prior assumptions appear outdated and could create avoidable rework if left unchecked.</email>",<author>Bob</author>
+64,"<email>Kindly make sure that support macros are reviewed for tone and accuracy, since the current templates occasionally over-promise timelines and that, in turn, sets a difficult precedent for the next interaction.</email>",<author>Bob</author>
+65,"<email>The offsite agenda should be structured around decisions rather than status, with pre-reads that make the trade-offs explicit, so we spend the time moving forward instead of rehashing context.</email>",<author>Bob</author>
+66,"<email>Please coordinate with Talent to schedule skip-level conversations across Customer Success, because I would like to hear directly about the friction they experience with our internal tooling and processes.</email>",<author>Bob</author>
+67,"<email>I am comfortable approving the additional spend as long as we document the expected payback period, define the measurement methodology, and agree on the threshold at which we would pull the plug if results do not materialize.</email>",<author>Bob</author>
+68,"<email>Thank you for the thoughtful write-up on the architecture decisions, and while I support the direction, I want to confirm we have capacity to maintain the new services without degrading our incident response times.</email>",<author>Bob</author>
+69,"<email>Let us keep the external messaging restrained until we have validated performance at scale, because early promises tend to linger and can become liabilities if we later need to adjust the roadmap.</email>",<author>Bob</author>
+70,"<email>Could we add a short customer quote to the case study that demonstrates measurable improvements, ideally a metric tied to revenue or cost savings, as that tends to resonate with our target audience.</email>",<author>Bob</author>
+71,"<email>I would like Finance to provide a sensitivity analysis on the exchange-rate exposure for our European contracts, since a small shift can materially affect the margin profile this quarter.</email>",<author>Bob</author>
+72,"<email>The sales enablement session should include a live objection-handling segment, because the theoretical benefits are clear, yet the field keeps encountering practical blockers that we can resolve with prepared responses.</email>",<author>Bob</author>
+73,"<email>Please ensure that any commitments we make in the partnership memorandum are operationally feasible within the next two sprints, otherwise we will start the relationship with missed expectations.</email>",<author>Bob</author>
+74,"<email>On the hiring plan, let us prioritize candidates with relevant domain knowledge for the first two roles, as that will reduce onboarding time and improve our ability to hit the milestones we just agreed.</email>",<author>Bob</author>
+75,"<email>If Security identifies a material risk during the review, I want us to pause the deployment rather than accept a workaround that increases long-term debt, because those shortcuts have a way of accumulating quietly.</email>",<author>Bob</author>
+76,"<email>I saw the updated churn analysis and, while helpful, it would benefit from a clearer segmentation by cohort and product tier, so we can tailor the interventions to where they will have the greatest effect.</email>",<author>Bob</author>
+77,"<email>Kindly prepare a short appendix that details the assumptions behind the top-line forecast, including pipeline conversion rates, average deal size, and seasonality adjustments, so we have transparency during review.</email>",<author>Bob</author>
+78,"<email>The customer advisory council meeting should be oriented around open questions we genuinely need guidance on, not a feature tour, because we will get far more value from candid feedback than from polite applause.</email>",<author>Bob</author>
+79,"<email>I would appreciate a concise timeline that captures the decision points, the dependency owners, and the rollback criteria, since that will help us communicate clearly across teams during the launch window.</email>",<author>Bob</author>
+80,"<email>Please confirm that our uptime commitments in the draft SLOs match what the platform can reliably sustain during peak load, as setting unrealistic targets would only invite escalations later.</email>",<author>Bob</author>
+81,<email>Let us not overcomplicate the go-to-market motion for the add-on; a simple packaging approach with a crisp value proposition will likely outperform a complex bundle that no one fully understands.</email>,<author>Bob</author>
+82,"<email>I would like the team to document the operational playbook for high-priority incidents, including the first five actions, the communication cadence, and the closure checklist, so we can standardize our response.</email>",<author>Bob</author>
+83,"<email>The contract negotiation should focus on aligning incentives around mutual outcomes, and if we can tie a portion of pricing to realized value, we may unlock a longer-term partnership that benefits both sides.</email>",<author>Bob</author>
+84,"<email>Please verify that our attribution model is not double-counting assisted conversions, because some of the channels appear inflated when compared to last quarter, which suggests a methodological inconsistency.</email>",<author>Bob</author>
+85,"<email>I want to ensure that the compliance training refresh is practical and scenario-driven, rather than a theoretical module, since that will increase retention and reduce the likelihood of accidental violations.</email>",<author>Bob</author>
+86,"<email>Thank you for moving quickly on the vendor evaluation, and let us make sure we press for references that resemble our environment so we get a realistic sense of performance and support quality.</email>",<author>Bob</author>
+87,"<email>The product brief should begin with the customer problem, articulate the jobs-to-be-done, and end with a measurable definition of success, because that structure consistently produces better outcomes.</email>",<author>Bob</author>
+88,"<email>I would like us to capture lessons learned from the last release, not to assign blame, but to refine our process and avoid repeating patterns that cost us time and goodwill with users.</email>",<author>Bob</author>
+89,"<email>Please prepare talking points for the analyst briefing that emphasize our differentiation on reliability and time to value, while remaining honest about the roadmap items that are still maturing.</email>",<author>Bob</author>
+90,"<email>Let us verify that the data export pathway respects the customer’s configuration choices, as the current behavior may unintentionally include fields that should remain out of scope.</email>",<author>Bob</author>
+91,"<email>If the team needs additional support to hit the date, I am open to short-term contractors, provided we document handover plans to avoid knowledge loss after the engagement concludes.</email>",<author>Bob</author>
+92,"<email>Thank you for coordinating the cross-functional review and, assuming we can close the two open risks by Thursday, I approve moving forward with the phased rollout starting next week.</email>",<author>Bob</author>
+93,"<email>Please ensure the investor update avoids jargon and anchors on outcomes, because clarity builds confidence and helps us set expectations appropriately for the next quarter.</email>",<author>Bob</author>
+94,"<email>I am supportive of the proposal to sunset the legacy connector as long as we provide customers with a clean migration path, complete with tooling and a realistic grace period.</email>",<author>Bob</author>
+95,"<email>Let us add a brief ethics review to the model deployment checklist, focusing on data provenance and potential bias, so we stay ahead of both regulatory expectations and customer trust concerns.</email>",<author>Bob</author>
+96,"<email>Please follow up with the procurement lead to confirm that the discount structure maintains our target margins after currency conversion and taxes, because the preliminary numbers seemed tight.</email>",<author>Bob</author>
+97,"<email>I would like weekly notes from the beta program that highlight surprising behaviors, requested integrations, and any friction during setup, as those insights tend to inform both product and documentation.</email>",<author>Bob</author>
+98,"<email>If we can finalize the narrative for the keynote by Wednesday, Marketing will have sufficient time to refine visuals and rehearse, which usually translates to a more confident delivery on stage.</email>",<author>Bob</author>
+99,<email>Thanks for the progress; please maintain the current pace and keep me informed if any material risks emerge that would jeopardize the commitments we have made to customers.</email>,<author>Bob</author>
+100,"<email>Best, Bob</email>",<author>Bob</author>
+101,"<email>Regards, Bob</email>",<author>Bob</author>
+102,<email>—Bob</email>,<author>Bob</author>
+103,"<email>Sincerely, Bob</email>",<author>Bob</author>
+104,"<email>Thanks, Bob</email>",<author>Bob</author>
+105,<email>I cannot reproduce the crash locally; can you share exact steps?</email>,<author>Charlie</author>
+106,<email>Pushed small refactor to reduce allocations; please check naming.</email>,<author>Charlie</author>
+107,<email>Standup time is late for me; can we start 15 min earlier?</email>,<author>Charlie</author>
+108,<email>CI failing with timeout; I re-run but same. Maybe cache?</email>,<author>Charlie</author>
+109,"<email>Estimate for TKT-312 is 1–2 days, need API error list.</email>",<author>Charlie</author>
+110,<email>Spec is unclear about retry policy; backoff or immediate?</email>,<author>Charlie</author>
+111,<email>Added extra logs in auth service; still not seeing root cause.</email>,<author>Charlie</author>
+112,<email>Hotfix for null pointer ready; waiting for merge rights.</email>,<author>Charlie</author>
+113,<email>DB query slow after last migration; we should add composite index.</email>,<author>Charlie</author>
+114,<email>Flaky tests in payments; I will stabilize and add waits.</email>,<author>Charlie</author>
+115,<email>Please review PR #842; focus on concurrency part.</email>,<author>Charlie</author>
+116,"<email>I think we should not store secrets in env files, use vault.</email>",<author>Charlie</author>
+117,<email>I will write a small script to migrate data safely.</email>,<author>Charlie</author>
+118,<email>Customer reported 500 error; log shows token expired.</email>,<author>Charlie</author>
+119,<email>Can we reduce scope for this sprint? Too many open items.</email>,<author>Charlie</author>
+120,<email>Feature flag is off in prod; that’s why metric is flat.</email>,<author>Charlie</author>
+121,<email>I rename the function for clarity; no behavior change.</email>,<author>Charlie</author>
+122,<email>Cache invalidation missing; that caused stale UI.</email>,<author>Charlie</author>
+123,<email>I prefer explicit types here; less magic.</email>,<author>Charlie</author>
+124,<email>Docs for SDK are outdated; I can update after release.</email>,<author>Charlie</author>
+125,<email>Please add acceptance criteria; story is too open.</email>,<author>Charlie</author>
+126,<email>There is race condition on startup; we need lock.</email>,<author>Charlie</author>
+127,<email>I will pair with David this afternoon to fix tests.</email>,<author>Charlie</author>
+128,<email>Do we have approval for new S3 bucket in eu-west-1?</email>,<author>Charlie</author>
+129,<email>Latency improved 30% after removing sync call.</email>,<author>Charlie</author>
+130,<email>We should paginate this endpoint; payload is huge.</email>,<author>Charlie</author>
+131,<email>I made a quick POC; code is ugly but shows idea.</email>,<author>Charlie</author>
+132,<email>Can we drop support for Python 3.8? End of life.</email>,<author>Charlie</author>
+133,<email>Lint rules fail on import order; I will fix soon.</email>,<author>Charlie</author>
+134,"<email>I don’t understand the acceptance test step 4, why click twice?</email>",<author>Charlie</author>
+135,<email>Production error seems from bad deploy; roll back?</email>,<author>Charlie</author>
+136,<email>I will add metrics for queue depth; no visibility now.</email>,<author>Charlie</author>
+137,<email>Small nit: please avoid abbreviations in names.</email>,<author>Charlie</author>
+138,"<email>I think the bug is in the third-party lib, not ours.</email>",<author>Charlie</author>
+139,<email>My change passed staging; ok to push to prod?</email>,<author>Charlie</author>
+140,"<email>I recieved access to the dashboard now, thx.</email>",<author>Charlie</author>
+141,<email>Code review comments addressed; please re-check.</email>,<author>Charlie</author>
+142,<email>The diagram is nice but not accurate to reality.</email>,<author>Charlie</author>
+143,"<email>We should write a postmortem, keep it blameless.</email>",<author>Charlie</author>
+144,"<email>I will be offline 30 min for dentist, back after.</email>",<author>Charlie</author>
+145,<email>Unit tests cover only happy path; I add edge cases.</email>,<author>Charlie</author>
+146,<email>Build takes too long; maybe enable incremental cache.</email>,<author>Charlie</author>
+147,<email>I added retry with jitter; should help with spikes.</email>,<author>Charlie</author>
+148,<email>Naming proposal: clientId -> customerId; more clear.</email>,<author>Charlie</author>
+149,"<email>Security note: dont log PII, I saw emails in logs.</email>",<author>Charlie</author>
+150,"<email>Tommorow I can finish the parser, today meetings.</email>",<author>Charlie</author>
+151,"<email>please ping me when QA ready, I run manual check.</email>",<author>Charlie</author>
+152,"<email>I pushed wrong commit message, sorry for noise.</email>",<author>Charlie</author>
+153,<email>Question: do we support soft delete or hard delete?</email>,<author>Charlie</author>
+154,"<email>Merged. If anything breaks, I revert fast.</email>",<author>Charlie</author>
+155,<email>Could someone clarify the acceptance criteria for TKT-512? I see three tasks but only two are referenced in the story. What is the definition of done here?</email>,<author>David</author>
+156,"<email>Should this endpoint be idempotent? If yes, do we prefer returning 200 with existing resource or 409 to indicate a conflict?</email>",<author>David</author>
+157,"<email>Is there a preferred logging format for background jobs, or should I follow the web service JSON structure?</email>",<author>David</author>
+158,<email>I tried to reproduce the bug on staging but did not see the error. Could I get exact steps and a test account to use?</email>,<author>David</author>
+159,"<email>For the retry strategy, do we want exponential backoff with jitter, or a fixed delay to simplify observability?</email>",<author>David</author>
+160,"<email>Quick code question: is this the correct way to guard against None in the handler?
+
+```python
+def handle(item):
+    if item is None:
+        return ""no-op""
+    return process(item)
+```</email>",<author>David</author>
+161,"<email>Do we allow direct DB access from the worker, or must everything go through the service layer API?</email>",<author>David</author>
+162,<email>Who owns the schema for the analytics table? I need approval to add an index on created_at.</email>,<author>David</author>
+163,"<email>I am seeing flakiness in test_auth_flow. Is it safe to mark as flaky while I investigate, or should I block merges until fixed?</email>",<author>David</author>
+164,"<email>For local development, should I run docker compose with the default profile, or is there a custom profile for the notifications service?</email>",<author>David</author>
+165,"<email>Is this the preferred TypeScript type, or should I use a discriminated union instead?
+
+```ts
+type Result = { ok: true; data: T } | { ok: false; error: string };
+```</email>",<author>David</author>
+166,<email>Do we have a standard for HTTP timeouts between services? I see 2s in one place and 10s in another.</email>,<author>David</author>
+167,"<email>If the feature flag is off for all users, do we still ship behind the flag, or do we hold the merge until after QA completes?</email>",<author>David</author>
+168,<email>I need guidance on error messages. Should we expose specific validation details or generalize to a single message for security?</email>,<author>David</author>
+169,<email>Is there a canonical example for writing integration tests with the fake S3 client? A short snippet would help.</email>,<author>David</author>
+170,"<email>Code snippet for review: does this align with our style on early returns?
+
+```go
+if err != nil {
+    return nil, fmt.Errorf(""wrap: %w"", err)
+}
+```</email>",<author>David</author>
+171,"<email>Do we want to keep the legacy endpoint alive for one more release, or can I remove it now and add a migration note?</email>",<author>David</author>
+172,<email>What is the expected size for batch writes? I see latency spikes over 500 items; should I cap at 200?</email>,<author>David</author>
+173,<email>Could someone confirm the SLO for the reports API? I want to set alert thresholds correctly.</email>,<author>David</author>
+174,"<email>I am unsure about permission scopes. Should the importer run as a service account with write access, or use a delegated token per user?</email>",<author>David</author>
+175,"<email>Here is a minimal SQL I plan to add. Is this index acceptable on Postgres 14?
+
+```sql
+CREATE INDEX CONCURRENTLY idx_events_user_created
+ON events (user_id, created_at DESC);
+```</email>",<author>David</author>
+176,"<email>Should I debounce client side search, or implement server side pagination now to avoid large payloads?</email>",<author>David</author>
+177,<email>The design shows a disabled state that is not in the component library. Do we want a custom variant or should I reuse the secondary style?</email>,<author>David</author>
+178,"<email>For monitoring, is it better to emit a metric per outcome or a single histogram with labels?</email>",<author>David</author>
+179,<email>I ran into a circular dependency between modules. Is it okay if I split utils into subpackages to resolve this?</email>,<author>David</author>
+180,"<email>Does this small helper look reasonable, or do we have a helper that already does this?
+
+```python
+def clamp(x, lo, hi):
+    return max(lo, min(hi, x))
+```</email>",<author>David</author>
+181,<email>Who can grant me access to the staging logs bucket? I only have read for prod which is restricted.</email>,<author>David</author>
+182,"<email>What should the default for soft delete be? True by default, or explicit per call?</email>",<author>David</author>
+183,"<email>Is it acceptable to add a small CLI for support tasks, or should I extend the admin panel instead?</email>",<author>David</author>
+184,"<email>I wrote a quick script to sanitize fixtures. Can I check it in under scripts/tools?
+
+```bash
+sed -E ""s/[A-Za-z0-9._%+-]+@[A-Za-z0-9.-]+/user@example.com/g"" data.json > data_sanitized.json
+```</email>",<author>David</author>
+185,"<email>Do we require RFCs for new background jobs, or is a design doc in the repo sufficient for this scope?</email>",<author>David</author>
+186,"<email>Regarding caching, do we prefer cache aside with explicit invalidation, or write through for this endpoint?</email>",<author>David</author>
+187,"<email>Is this JSON schema compatible with our validator, or should I flatten the nested object?
+
+```json
+{
+  ""type"": ""object"",
+  ""required"": [""id"", ""status""],
+  ""properties"": {
+    ""id"": {""type"": ""string""},
+    ""status"": {""enum"": [""pending"", ""done"", ""failed""]}
+  }
+}
+```</email>",<author>David</author>
+188,<email>Could QA confirm the locale requirements? I only added en-GB and en-US; do we need de-DE for launch?</email>,<author>David</author>
+189,"<email>Do we enforce snake_case on environment variables, or are mixed styles allowed?</email>",<author>David</author>
+190,"<email>Should I use a transaction around the entire import, or process in chunks so we can resume after errors?</email>",<author>David</author>
+191,<email>I see duplicated code in notifier and alerts. May I extract a shared package and deprecate the old methods?</email>,<author>David</author>
+192,"<email>Can someone review this small change today so I can unblock the next task?
+
+```diff
+- timeout_ms: 10000
++ timeout_ms: 3000
+```</email>",<author>David</author>
+193,"<email>Is there a standard banner for maintenance windows, or should I create a simple inline alert in the app?</email>",<author>David</author>
+194,"<email>For security, do we need to rotate the API key on every deploy, or only on incidents and scheduled intervals?</email>",<author>David</author>
+195,"<email>Would this small refactor be acceptable now, or should I open a follow up ticket to avoid scope creep?</email>",<author>David</author>
+196,"<email>Here is the regex I plan to use for IDs. Is this strict enough?
+
+```regex
+^[a-z0-9-]{8,40}$
+```</email>",<author>David</author>
+197,"<email>Do we require user confirmation before deleting a webhook, or is a single click acceptable with an undo option?</email>",<author>David</author>
+198,<email>Who should sign off on the copy for the empty state screens? I drafted short messages but want approval.</email>,<author>David</author>
+199,<email>Is there a reason we use GET for an action that mutates state? Should this be POST instead to match our guideline?</email>,<author>David</author>
+200,<email>Could someone share a snippet for mocking time in our test framework? I need to simulate end of month behavior.</email>,<author>David</author>
+201,"<email>Do we track correlation IDs across services? If not, can I add a header propagation middleware?</email>",<author>David</author>
+202,"<email>I added a feature flag guard. Is this the right pattern?
+
+```kotlin
+if (flags.isEnabled(""newFlow"")) {
+    startNewFlow()
+} else {
+    startOldFlow()
+}
+```</email>",<author>David</author>
+203,"<email>Should config be reloaded at runtime, or do we require a restart when env values change?</email>",<author>David</author>
+204,<email>Is there a naming convention for migrations? I used yyyyMMddHHmm prefix; happy to change if needed.</email>,<author>David</author>
+205,"<email>Last question for now: is the demo tomorrow interactive, or should I record a short walkthrough in advance in case of network issues?</email>",<author>David</author>
