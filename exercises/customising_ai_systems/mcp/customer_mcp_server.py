@@ -22,6 +22,7 @@ from data.customers import (
 #      - How many high-value customers (spending more than 1 million a year) are there?
 #      - Which customers have offices in Europe?
 #      - Which customers have offices in the US and spend more than 2 million a year?
+#      - Which countries do high-value customers (spending more than 1 million a year) have offices in?
 #
 mcp = FastMCP("Customer MCP")
 
