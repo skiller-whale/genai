@@ -236,7 +236,7 @@ lines.linewidth: 1.5               # line width in points
 ## relative to font.size, using the following values: xx-small, x-small,
 ## small, medium, large, x-large, xx-large, larger, or smaller
 
-font.family:  sans-serif
+font.family:  serif
 #font.style:   normal
 #font.variant: normal
 #font.weight:  normal
@@ -388,7 +388,7 @@ axes.labelcolor:    012e57
 
 #axes.unicode_minus: True  # use Unicode for the minus symbol rather than hyphen.  See
                            # https://en.wikipedia.org/wiki/Plus_and_minus_signs#Character_codes
-        
+
 axes.prop_cycle: cycler('color', ['012e57', 'fda16f', '0063fc', 'fd846f', '26a69f', 'ab8f2e', '8b3d94' , '9099b4'])
 # axes.prop_cycle: cycler('color', ['1f77b4', 'ff7f0e', '2ca02c', 'd62728', '9467bd', '8c564b', 'e377c2', '7f7f7f', 'bcbd22', '17becf'])
                   # color cycle for plot lines as list of string color specs:

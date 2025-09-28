@@ -31,7 +31,7 @@ client = session.client(
 #  Currently there are tools that aren't actually called - you will need to implement that.
 #
 #  * There is a JSON schema defined for the `get_customer_annual_spend` and `get_customer_list` tools.
-#     Add a schema for the `get_customer_office_locations` tool (it doesn't take any parameters).
+#     Add a schema for the `get_customer_office_locations` tool (it takes one parameter, `id`, of type `integer`).
 #  * Implement the code to call the `get_customer_office_locations` tool when the LLM requests it.
 #     You can see examples of how to call the other tools in the code below.
 #
@@ -54,7 +54,7 @@ pprint('Sample output from get_customer_office_locations for customer 1:')
 pprint(get_customer_office_locations(1))
 print('')
 
-# TODO add a toolSpec for `get_customer_list`
+# TODO add a toolSpec for `get_customer_office_locations`
 TOOL_CONFIG = { "tools":
     [
         {
