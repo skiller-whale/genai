@@ -1,7 +1,6 @@
 version: '3.8'
 services:
   exercises:
-    profiles: ["exercises"] # exclude from "docker-compose up"
     build: .
     volumes:
       - ./exercises:/app/exercises
@@ -32,7 +31,6 @@ services:
       ATTENDANCE_ID: "${SW_ATTENDANCE_ID}"
       NEXT_TELEMETRY_DISABLED: 1
   continue_session_sync_filter:
-    profiles: ["continue"]
     image: "ghcr.io/skiller-whale/continue-session-sync-filter:0.0.2"
     volumes:
       - /home/learner/.continue/sessions:/sessions_raw
