@@ -1,6 +1,6 @@
 # Skiller Whale, Exercises for Generative AI
 
-This repo includes exercises to accompany Skiller Whale sessions on Genearative AI.
+This repo includes exercises to accompany Skiller Whale sessions on Generative AI.
 
 During each session you'll be asked to write and edit code in some of the files.
 
