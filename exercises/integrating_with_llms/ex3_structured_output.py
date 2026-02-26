@@ -1,4 +1,5 @@
 import boto3
+import json
 from pprint import pprint
 from data.animals import animal_data
 from utils import get_attendance_id
@@ -40,31 +41,16 @@ client = session.client(
 animals_schema = {
     # an array of animals
     "type": "array",
+    # Edit this to describe an animal
     "items": {
         "type": "object",
-        # YOU CODE GOES HERE
+        # YOUR CODE GOES HERE
         #   Edit this to add appropriate properties
         "properties": {},
         "required": [],
         "additionalProperties": False
     }
 }
-
-# Define the tool
-tool_config = { "tools": [{
-    "toolSpec": {
-        "name": "list_animals",
-        "description": "List Animals",
-        "inputSchema": {
-            "json": {
-                "type": "object",
-                "properties": { "animals": animals_schema },
-                "required": ["animals"]
-            }
-        }
-    }
-}]}
-
 
 sysprompt = [
     # TODO: Edit the system prompt appropriately
@@ -77,16 +63,28 @@ messages = [
 ]
 
 res = client.converse(
-    modelId='eu.amazon.nova-pro-v1:0',
+    modelId='eu.anthropic.claude-haiku-4-5-20251001-v1:0',
     system=[{ "text": sysprompt }],
-    toolConfig=tool_config,
-    messages=messages
+    messages=messages,
+    inferenceConfig={
+        "maxTokens": 1024
+    },
+    outputConfig={
+        "textFormat": {
+            "type": "json_schema",
+            "structure": {
+                "jsonSchema": {
+                    "schema": json.dumps(animals_schema),
+                    "name": "animal_extraction"
+                }
+            }
+        }
+    }
 )
 
 out_msg = res['output']['message']
 pprint(out_msg)
 
 # UNCOMMENT TO EXTRACT JSON DIRECTLY
-# json = out_msg['content'][1]['toolUse']['input']['animals']
-# pprint(json)
-
+# result = json.loads(out_msg['content'][0]['text'])
+# pprint(result)
