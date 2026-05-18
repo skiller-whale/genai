@@ -1,9 +1,4 @@
 services:
-  exercises:
-    build: .
-    volumes:
-      - ./exercises:/app/exercises
-      - ./attendance_id:/app/sync/attendance_id
   sync:
     image: "ghcr.io/skiller-whale/learnersync:0.2.4"
     network_mode: "host"
