@@ -1,4 +1,9 @@
+"""
+Utility functions for the GenAI exercises.
+"""
+
 import boto3
+import os
 
 
 def get_bedrock_client():
@@ -13,15 +18,21 @@ def get_bedrock_client():
     )
 
 
-def get_attendance_id(path='/app/sync/attendance_id'):
+def get_attendance_id(env_var='SW_ATTENDANCE_ID'):
     """
-    Get the attendance ID from a file.
+    Get the attendance ID from an environment variable.
+
     Args:
-        path (str): The path to the file containing the attendance ID.
+        env_var (str): The environment variable name.
     Returns:
         str: The attendance ID."""
-    with open(path, 'r') as f:
-        return f.read().strip()
+
+    attendance_id = os.getenv(env_var)
+
+    if not attendance_id:
+        raise ValueError(f"Attendance ID not found in environment variable '{env_var}'.")
+
+    return attendance_id
 
 
 def accuracy_score(y_true, y_pred):
