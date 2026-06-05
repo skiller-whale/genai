@@ -62,4 +62,17 @@ def extract_output(resp):
     return msg[0]['text']
 
 
+def extract_output_and_reasoning(resp):
+    messages = resp['output']['message']['content']
+    reasoning, output = '', ''
+
+    for message in messages:
+        if 'reasoningContent' in message:
+            reasoning += message['reasoningContent']['reasoningText']['text']
+        elif 'text' in message:
+            output += message['text']
+
+    return reasoning, output
+
+
 bprint = lambda x, end='\n': print(f'\033[1m{x}\033[0m', end=end)
