@@ -38,8 +38,14 @@ client = session.client(
     endpoint_url='https://bedrock.aws-proxy.skillerwhale.com/'
 )
 
-gid = client.list_guardrails()['guardrails'][0]['id']
-gv = client.list_guardrails()['guardrails'][0]['version']
+gid, gv = None, None
+for guardrail_config in client.list_guardrails()['guardrails']:
+    if guardrail_config.get('name') == 'orange_juice':
+        gid, gv = guardrail_config['id'], guardrail_config['version']
+        break
+
+if gid is None or gv is None:
+    raise ValueError('Cannot find orange_juice guardrail!')
 
 
 model = 'eu.amazon.nova-pro-v1:0'
