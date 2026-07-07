@@ -32,7 +32,7 @@ client = session.client(
 user_messages = [
     "Explain the major limitations of LLMs.",
     # "Write Clojure code to find the shortest route between two points in a network. Be concise.",
-    # "What is the smallest species of whale?"
+    # "What is the smallest species of whale? Explain thoroughly.",
 ]
 
 
@@ -49,12 +49,12 @@ for user_message in user_messages:
     # STREAMING
     try:
         # Send the message to the model, using a basic inference configuration.
+        start_time = time.perf_counter()
+
         streaming_response = client.converse_stream(
             modelId=model_id,
             messages=conversation
         )
-
-        start_time = time.perf_counter()
 
         if len(user_messages) == 1:
             print('LLM Response, streamed:')
