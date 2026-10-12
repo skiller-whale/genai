@@ -23,7 +23,7 @@ sysprompt = """
 
 
 chat = """
-    Query: I'm not sure if I need to renew, upgrade, or fix something on my subscription.
+    Query: I'm not sure if I need to renew, upgrade, or fix something.
 """
 
 
@@ -37,16 +37,19 @@ print('=' * 50)
 for i in tqdm.tqdm(range(N_TRIALS)):
     start_time = perf_counter()
     res = client.converse(
-        modelId='eu.anthropic.claude-haiku-4-5-20251001-v1:0',
+        modelId='eu.anthropic.claude-haiku-5-5',
         system=[{ "text": sysprompt }],
         messages=[{"role": "user", "content": [{"text": chat}]}],
         inferenceConfig={
-            'temperature': 0.0
+            "maxTokens": 128
         },
         additionalModelRequestFields={
-            "reasoning_config": {
-                "type": "disabled",
-                # "budget_tokens": 1024
+            "thinking": {
+                "type": "adaptive",
+                "display": "summarized",
+            },
+            "output_config": {
+                "effort": "low"
             }
         }
     )
