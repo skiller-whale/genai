@@ -63,16 +63,17 @@ def extract_output(resp):
 
 
 def extract_output_and_reasoning(resp):
-    messages = resp['output']['message']['content']
-    reasoning, output = '', ''
+    content = resp["output"]["message"]["content"]
+    reasoning, output = "", ""
 
-    for message in messages:
-        if 'reasoningContent' in message:
-            reasoning += message['reasoningContent']['reasoningText']['text']
-        elif 'text' in message:
-            output += message['text']
+    for block in content:
+        if "reasoningContent" in block:
+            reasoning_text = block["reasoningContent"].get("reasoningText")
+            if reasoning_text:
+                reasoning += reasoning_text.get("text", "")
+        elif "text" in block:
+            output += block["text"]
 
     return reasoning, output
-
 
 bprint = lambda x, end='\n': print(f'\033[1m{x}\033[0m', end=end)
